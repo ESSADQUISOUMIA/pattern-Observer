@@ -1,4 +1,8 @@
 package com.finpulse.observer.obs;
 
-public class Observable {
+public interface Observable {
+    void subscribe(Observer o );
+    void unsubscribe(Observer o);
+    void notifyObservers();
 }
+
