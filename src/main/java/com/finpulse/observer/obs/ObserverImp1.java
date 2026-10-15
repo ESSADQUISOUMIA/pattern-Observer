@@ -4,9 +4,9 @@ public class ObserverImp1 implements Observer {
     //méthode Pop
     @Override
     public void update(Observable o) {
-        if(o instanceof ObservableImpl){
+        if(o instanceof ObservableImp){
             System.out.println("******Observer1*******");
-            System.out.println("new State "+ ((ObservableImpl) o).getState());
+            System.out.println("new State "+ ((ObservableImp) o).getState());
         }
 
 
