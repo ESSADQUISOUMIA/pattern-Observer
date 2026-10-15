@@ -1,4 +1,7 @@
 package com.finpulse.observer.obs;
 
-public class Observer {
+@FunctionalInterface
+public interface Observer {
+
+    void update(Observable o);
 }
